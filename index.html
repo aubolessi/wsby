@@ -14,9 +14,12 @@
 
   body {
     background: #E6E6DE;
+    font-family: "Helvetica Neue", Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
     padding: 1.5rem;
   }
 
@@ -26,6 +29,33 @@
     height: auto;
     display: block;
   }
+
+  .contact a {
+    display: inline-block;
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    color: #7A5C2E;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(122, 92, 46, 0.35);
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .contact a:hover,
+  .contact a:focus-visible {
+    color: #00A99D;
+    border-bottom-color: #00A99D;
+  }
+
+  .contact a:focus-visible {
+    outline: 2px solid #00A99D;
+    outline-offset: 5px;
+    border-radius: 2px;
+  }
+
+  @media (max-width: 480px) {
+    body { gap: 1.25rem; }
+  }
 </style>
 </head>
 <body>
@@ -34,6 +64,11 @@
        src="logo.gif"
        alt="WSBK — will soon be young. Website soon."
        width="600" height="400">
+
+  <p class="contact">
+    <a href="https://www.instagram.com/kasdorota/"
+       target="_blank" rel="noopener">WSBY - instagram</a>
+  </p>
 
 </body>
 </html>
